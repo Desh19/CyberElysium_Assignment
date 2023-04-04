@@ -6,14 +6,14 @@
 <div class="container">
       <div class="row">
             <div class="col-lg-12 text-center">
-                  <h1 class="page-title">Add Student</h1>
+                  <h1 class="page-title">ADD STUDENT</h1>
             </div>
 
             <div class="col-lg-12 mt-4">
 
                   <form @submit.prevent="submit">
 
-                        <div class="row d-grid gap-3">
+                        <div class="row d-grid gap-3 formArea">
                               <div class="form-floating">
                                     <input name="name" id="floatingPassword" v-model="student.name" type="text" class="form-control"  placeholder="Student Name">
                                     <label class="label" for="floatingPassword">Name</label>
@@ -40,7 +40,9 @@
             <!-- {{-- ==================================student List========================= --}} -->
 
             <div class="col-lg-12">
-                  <h1 class="mt-4">Student List</h1>
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-4">STUDENT LIST</h1>
+                </div>
                   <table class="table table-bordered mt-4">
                         <thead>
                               <tr>
@@ -237,5 +239,11 @@ export default {
             border-radius: 50%;
             background-color: rgb(216, 2, 2);
       }
+
+      .formArea{
+        border: 2px solid #000;
+        padding: 50px;
+    }
+
 
 </style>
