@@ -2,11 +2,13 @@
 
       <AppLayout>
             <template #content>
-                  <h1>Dashboard</h1>
+                <center>
+                  <img class="homeimg" src="../../../../public/images/homeimage.png" alt="Home"/>
+                </center>
             </template>
       </AppLayout>
 
-      
+
 </template>
 
 <script>
@@ -25,6 +27,11 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+
+        .homeimg{
+                width: 560px;
+                height: 499px;
+        }
 
 </style>
